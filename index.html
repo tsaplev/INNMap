@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Интерактивная карта районов Нижнего Новгорода</title>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="jquery.tooltip.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="text">
+  <h1>Нижний Новгород</h1>
+  <p>Нижний Новгород имеет восемь районов :</p>
+  <table id="areas">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Название</th>
+        <th>Население</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id='polygon18'> 
+        <td><input type="checkbox"></td>
+        <td>Автозаводский</td>
+        <td>300 647</td>
+        </tr> 
+      <tr id='polygon24'> 
+        <td><input type="checkbox"></td>
+        <td>Сормовский</td> 
+        <td>167 443</td>
+      </tr> 
+      <tr id='polygon20'> 
+        <td><input type="checkbox"></td>
+        <td>Канавинский</td> 
+        <td>156 991</td>
+      </tr> 
+      <tr id='polygon12'> 
+        <td><input type="checkbox"></td>
+        <td>Советский</td> 
+        <td>148 324</td>
+      </tr> 
+      <tr id='polygon16'> 
+        <td><input type="checkbox"></td>
+        <td>Ленинский</td> 
+        <td>141 653</td>
+       </tr>  
+        <tr id='polygon22'> 
+        <td><input type="checkbox"></td>
+        <td>Московский</td> 
+        <td>131 293</td>
+         <tr id='_130264864' data-addid="_130050312" > 
+        <td><input type="checkbox"></td>
+        <td>Нижегородский</td> 
+        <td>131 293</td>
+       </tr>
+        <tr id='_130050312' data-addid="_130264864" style="display: none"> 
+        <td><input type="checkbox"></td>
+        <td>Нижегородский</td> 
+        <td>131 293</td>
+       </tr>
+       <tr id='polygon14'> 
+        <td><input type="checkbox"></td>
+        <td>Приокский</td> 
+        <td>93 370</td>
+       </tr>
+       <tr> 
+        <td colspan="2" align="right">Всего:</td> 
+        <td id="counter"></td>
+       </tr>
+    </tbody>
+  </table>
+ 
+</div>
+
+<figure id="imapc">
+  <object data="nnmap.svg" type="image/svg+xml" id="imap">
+    <p>Обнови браузер, придурок.</p>
+  </object>
+  <figcaption>Работу выполнил: </figcaption>
+</figure>
+
+<script src="script.js"></script>
+
+</body>
+</html>
